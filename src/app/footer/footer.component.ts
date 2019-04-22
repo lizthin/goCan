@@ -7,27 +7,17 @@ import { FormGroup, FormBuilder } from '@angular/forms';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  public nameEnterprise = 'Acsendo';
+  public nameEnterprise = 'Go Can';
   public arrayForm: any[] = [];
-  public formAcsendo: any;
+  public formGoCan: any;
 
   constructor(private fb: FormBuilder) {
 
-    this.formAcsendo = new FormGroup({});
-    this.formAcsendo = this.fb.group({
+    this.formGoCan = new FormGroup({});
+    this.formGoCan = this.fb.group({
       name: '',
-      email: '',
-      company: '',
-      employee: '1',
-      product: '1',
-      country: '1',
-      number_employee: '1',
-      number_indicative:'1',
-      number_phone:'',
-      reason_lookFor:''
-
-
-
+      tel: '',
+      reason:'',
     });
   }
 

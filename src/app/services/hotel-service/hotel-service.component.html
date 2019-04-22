@@ -1,0 +1,101 @@
+<ng-template #content let-modal>
+  <div class="modal-body degradeGreen fadeInRight " [ngClass]="{'animated':isOpen}">
+    <div class="row mb-3" style="margin-left: 10px">
+      <div class="col-6">
+        <h1 class="modal-title textoutstanding fontTitles">{{generalObject.tittle}}</h1>
+      </div>
+      <div class="col-6">
+        <span class="{{iconArray.three}}" style="font-size: 4em">
+        </span>
+      </div>
+    </div>
+    <div class="row position-relative">
+      <div class="col-4">
+        <span class="gocan-pawprints position-absolute" style="transform: rotate(36deg);font-size: 24px;top: -20px;"></span>
+      </div>
+      <div class="col"></div>
+    
+      <div class="col-1">
+        <span class="gocan-pawprints position-absolute" style="transform: rotate(63deg);font-size: 40px;/* 71px; */top: 30px;"></span>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 10px">
+      <div class="col-lg-6 col-md-12 col-12">
+        <div id="carouselGoCan" class="carousel slide imagen" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselGoCan" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselGoCan" data-slide-to="1"></li>
+            <li data-target="#carouselGoCan" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="1000">
+              <div class="imagen" style="height: 70%;">
+                <img src="{{photos.imageOne}}" class="d-block w-100 " alt="..." style="margin: auto; display: block; width: 100%;height: 100%">
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="1000">
+              <div class="imagen" style="height: 70%;">
+                <img src="{{photos.imageTwo}}" class="d-block w-100" alt="..." style="margin: auto; display: block; width: 100%;height: 100%">
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="1000">
+              <div class="imagen" style="height: 70%;">
+                <img src="{{photos.imageThree}}" class="d-block w-100" alt="..." style="margin: auto; display: block; width: 100%;height: 100%">
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselGoCan" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselGoCan" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="row">
+          <div class="col-12 fontTitles textoutstanding">
+            <h1>{{generalObject.decriptionOne}}</h1>
+          </div>
+        </div>
+        <div class="row mt-3 mt-lg-8 justify-content-center  ">
+          <div class="col-6 fontTitles textoutstanding">
+            <h4>{{generalObject.decriptionTwo}}</h4>
+          </div>
+          <div class="col-4 align-self-center text-center">
+            <span class="{{iconArray.one}}" style="font-size: 5em">
+            </span>
+          </div>
+        </div>
+        <div class="row mt-4 justify-content-end">
+          <div class="col-4 align-self-center text-center">
+            <span class="{{iconArray.two}}" style="font-size: 5em">
+            </span>
+          </div>
+          <div class="col-8 fontTitles textoutstanding">
+            <h2>{{generalObject.decriptionThree}}</h2>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-end">
+          <div class="col-2 textGeneral textGeneral" (click)="modal.close('Close click')">
+            <span class="gocan-bone" style="font-size: 2em">
+            </span>
+            <a>Atras</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row position-relative">
+      <div class="col-4">
+        <span class="gocan-pawprints position-absolute" style="transform: rotate(-116deg);font-size: 24px;top: -20px;"></span>
+      </div>
+      <div class="col"></div>
+      <div class="col-2">
+        <span class="gocan-pawprints position-absolute" style="transform: rotate(-79deg);font-size: 29px;top: -50px;"></span>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
+</ng-template>
